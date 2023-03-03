@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { FitnesBackgroundService } from './fitnes';
+import { FitnesModule } from './fitnes/fitnes.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +14,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FitnesModule,
+    InMemoryWebApiModule.forRoot(FitnesBackgroundService,{
+      delay: 500
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

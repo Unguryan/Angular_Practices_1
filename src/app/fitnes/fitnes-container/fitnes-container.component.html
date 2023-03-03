@@ -1,0 +1,14 @@
+<h2 class="ms-3">Fitness</h2>
+
+<div class="input-group ms-3 mt-4 w-75">
+    <input class="form-control" type="text" name="addInput" [(ngModel)]="addingItemName" >
+    <button class="btn btn-outline-success" (click)="AddActivityEventHanlder()"> Add new Item </button>
+</div>
+
+<div class="ms-3 ms-3 w-75" *ngFor="let activity of activities">
+    <app-fitnes-item 
+    [act]="activity"
+    (changeActivityEvent)="ChangeActivityHandler($event)"
+    (removeActivityEvent)="RemoveActivityHandler($event)"
+    ></app-fitnes-item>
+</div>

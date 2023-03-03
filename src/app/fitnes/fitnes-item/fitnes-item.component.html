@@ -1,0 +1,26 @@
+
+<div class="row">
+
+    <div class="col align-self-center">
+        <span><b>ID: </b>{{activity?.id}}</span>
+        <span class="ms-2"><b>Name: </b>{{activity?.name}}</span>
+    </div>
+
+    <div class="col">
+        <div class="d-flex justify-content-end">
+            <button class="btn btn-outline-warning" (click)="ChangeActivity()">Change</button>
+            <button class="btn btn-outline-danger ms-2" (click)="RemoveActivity()">Remove</button>
+        </div>
+    </div>
+</div>   
+
+
+<div *ngIf="tougle">
+
+    <hr>
+
+    <div class="input-group w-75">
+        <input class="form-control" type="text" name="changeName" [(ngModel)]="newName">
+        <button class="btn btn-outline-warning" (click)="ChangeNameEvent()">Change Item</button>
+    </div>
+</div>
