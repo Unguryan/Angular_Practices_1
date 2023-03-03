@@ -5,8 +5,8 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { FitnesBackgroundService } from './fitnes';
-import { FitnesModule } from './fitnes/fitnes.module';
+import { FitnessBackgroundService } from './fitness/index';
+import { FitnessModule } from './fitness/fitness.module';
 
 @NgModule({
   declarations: [
@@ -15,8 +15,8 @@ import { FitnesModule } from './fitnes/fitnes.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FitnesModule,
-    InMemoryWebApiModule.forRoot(FitnesBackgroundService,{
+    FitnessModule,
+    InMemoryWebApiModule.forRoot(FitnessBackgroundService,{
       delay: 500
     })
   ],

@@ -4,7 +4,7 @@ import { InMemoryDbService } from 'angular-in-memory-web-api';
 @Injectable({
   providedIn: 'root'
 })
-export class FitnesBackgroundService implements InMemoryDbService {
+export class FitnessBackgroundService implements InMemoryDbService {
 
   constructor() { }
 

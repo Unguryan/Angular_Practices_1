@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { FitnesService } from '../index';
+import { FitnessService } from '../index';
 
 @Component({
-  selector: 'app-fitnes-container',
-  templateUrl: './fitnes-container.component.html',
-  styleUrls: ['./fitnes-container.component.css']
+  selector: 'app-fitness-container',
+  templateUrl: './fitness-container.component.html',
+  styleUrls: ['./fitness-container.component.css']
 })
-export class FitnesContainerComponent implements OnInit{
+export class FitnessContainerComponent implements OnInit{
 
-  constructor(private service : FitnesService){
+  constructor(private service : FitnessService){
   }
 
   addingItemName : string;

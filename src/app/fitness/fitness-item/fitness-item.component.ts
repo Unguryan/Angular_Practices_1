@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-fitnes-item',
-  templateUrl: './fitnes-item.component.html',
-  styleUrls: ['./fitnes-item.component.css']
+  selector: 'app-fitness-item',
+  templateUrl: './fitness-item.component.html',
+  styleUrls: ['./fitness-item.component.css']
 })
-export class FitnesItemComponent {
+export class FitnessItemComponent {
 
   @Input('act')
   activity : any;
@@ -17,6 +17,7 @@ export class FitnesItemComponent {
   removeActivityEvent = new EventEmitter<number>();
 
   tougle : boolean = false;
+  
   newName : string;
   
   ChangeActivity(){

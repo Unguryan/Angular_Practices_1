@@ -1,17 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FitnesBackgroundService, FitnesContainerComponent, FitnesItemComponent } from './index';
-import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
-
-
+import {FitnessContainerComponent, 
+        FitnessItemComponent } from './index';
 
 @NgModule({
   declarations: [
-    FitnesContainerComponent,
-    FitnesItemComponent,
+    FitnessContainerComponent,
+    FitnessItemComponent,
   ],
   imports: [
     CommonModule,
@@ -19,4 +17,4 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ]
 })
-export class FitnesModule { }
+export class FitnessModule { }

@@ -6,9 +6,9 @@
 </div>
 
 <div class="ms-3 ms-3 w-75" *ngFor="let activity of activities">
-    <app-fitnes-item 
+    <app-fitness-item 
     [act]="activity"
     (changeActivityEvent)="ChangeActivityHandler($event)"
     (removeActivityEvent)="RemoveActivityHandler($event)"
-    ></app-fitnes-item>
+    ></app-fitness-item>
 </div>
